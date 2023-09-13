@@ -8,14 +8,14 @@ class PersonalInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return  Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
+      children: const [
         SizedBox(height: defaultPadding/2,),
-        AreaInfoText(title: 'Contact', text: '03166657602'),
-        AreaInfoText(title: 'Email', text: 'rh676838@gmail.com'),
-        AreaInfoText(title: 'LinkedIn', text: '@hamad-anwar'),
-        AreaInfoText(title: 'Github', text: '@hamad-anwar'),
+        AreaInfoText(title: 'Contact', text: '977-9847351074'),
+        AreaInfoText(title: 'Email', text: 'smitaryal@gmail.com'),
+        AreaInfoText(title: 'LinkedIn', text: '@smitaryal'),
+        AreaInfoText(title: 'Github', text: '@smitaryal'),
         SizedBox(
           height: defaultPadding,
         ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'dart:html' as html;
 
 import '../../../res/constants.dart';
 
@@ -10,7 +10,9 @@ class DownloadButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        launchUrl(Uri.parse('https://drive.google.com/file/d/1HSIe7rdk8VtrAL4DQuybfMHQgDrQ6xNs/view?usp=sharing'));
+        html.AnchorElement(href: "assets/pdf/smit-aryal-cv.pdf")
+          ..target = 'file_download'
+          ..click();
       },
       child: Container(
         alignment: Alignment.center,

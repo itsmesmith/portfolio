@@ -12,7 +12,6 @@ class SplashView extends StatefulWidget {
 class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     Timer(const Duration(seconds: 3), () {
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const HomePage(),));
@@ -20,13 +19,13 @@ class _SplashViewState extends State<SplashView> {
   }
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       backgroundColor: bgColor,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
+          children: const [
             AnimatedImageContainer(width: 100,height: 100,),
             SizedBox(height: defaultPadding,),
             AnimatedLoadingText(),

@@ -81,9 +81,9 @@ class CertificateStack extends StatelessWidget {
                           BoxShadow(color: Colors.red,offset: Offset(0, 1),blurRadius: 5),
                         ]
                     ),
-                    child: const Row(
+                    child:  Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Text('Credentials',style: TextStyle(color: Colors.white,fontSize: 10),),
                         SizedBox(width: 5,),
                         Icon(

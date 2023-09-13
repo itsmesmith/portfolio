@@ -67,14 +67,14 @@ class AnimatedImageContainerState extends State<AnimatedImageContainer>
               child: Image.asset(
                 'assets/images/image.png',
                 height: Responsive.isLargeMobile(context)
-                    ? MediaQuery.sizeOf(context).width * 0.2
+                    ? MediaQuery.of(context).size.width * 0.2
                     : Responsive.isTablet(context)
-                        ? MediaQuery.sizeOf(context).width * 0.14
+                        ? MediaQuery.of(context).size.width * 0.14
                         : 200,
                 width: Responsive.isLargeMobile(context)
-                    ? MediaQuery.sizeOf(context).width * 0.2
+                    ? MediaQuery.of(context).size.width * 0.2
                     : Responsive.isTablet(context)
-                        ? MediaQuery.sizeOf(context).width * 0.14
+                        ? MediaQuery.of(context).size.width * 0.14
                         : 200,
                 fit: BoxFit.cover,
               ),

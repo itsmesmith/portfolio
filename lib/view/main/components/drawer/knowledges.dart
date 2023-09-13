@@ -7,16 +7,15 @@ class Knowledges extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return  Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
+      children: const [
         Divider(),
         Padding(
           padding: EdgeInsets.symmetric(vertical: 10),
           child: Text('Knowledge',style: TextStyle(color: Colors.white),),
         ),
         KnowledgeText(knowledge: 'Flutter, Dart'),
-        KnowledgeText(knowledge: 'Networking, Cyber Security'),
         KnowledgeText(knowledge: 'Git, Github'),
       ],
     );

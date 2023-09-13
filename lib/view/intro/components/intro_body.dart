@@ -11,7 +11,7 @@ class IntroBody extends StatelessWidget {
   const IntroBody({super.key});
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.sizeOf(context);
+    var size = MediaQuery.of(context).size;
     return Row(
       children: [
         SingleChildScrollView(

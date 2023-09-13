@@ -1,57 +1,46 @@
 class Project {
-  final String name;
-  final String description;
-  final String image;
-  final String link;
-  Project(this.name, this.description, this.image, this.link);
+  final String? name;
+  final String? description;
+  final String? link;
+  final String? playStoreLink;
+  Project( {this.name, this.description, this.link,this.playStoreLink});
 }
 
 List<Project> projectList = [
   Project(
-    'Coffee Application',
-    'Presenting "Coffee" - a Flutter UI application that invites you to indulge in a delightful coffee adventure. Immerse yourself in the world of rich aroma and flavor as you browse through an exquisite selection of specialty coffees. With a user-friendly interface, exploring different blends and discovering their unique details becomes a delightful experience.',
-    'assets/images/coffee.png',
-    'https://github.com/Hamad-Anwar/Coffe-Shop-Beautifull-UI',
+    name: 'Smart Health Nepal',
+    description: "The Smart Health Nepal App is designed to make it easier for consumers to connect with health authorities. Users may access the app's functionalities with a single click of a button and instantly interact with authorities.Nearby Blood Bank, Nearby Pharmacies, Nearby Hospitals, Medicine Reminder, IBW, BMI are just a handful of the premium services that will undoubtedly help consumers.",
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.smarthealthnepal.customer",
+  ),Project(
+    name: 'Weplay Nepal',
+    description: "WePlay is the easiest way to find playing spaces around you. Your favourite sport in your preferred location and venue of choice is now readily available in your mobile phones with this new update.",
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.weplay.weplay_customer",
+  ),Project(
+    name: 'Fresh Motors',
+    description: "This app provides vehicle maintenance services for it's users. App more focuses to manage the vehicle maintenance market that is quite haphazard in nepal.",
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.webbook.freshmotors",
   ),
   Project(
-    'Car Controller Application UI',
-    'Car Control Dashboard is a user-friendly mobile application built using Flutter and powered by GetX for efficient state management. Enjoy a modern and intuitive design that adapts to various screen sizes, Interact with dynamic car controls, including speed, steering, and temperature. Realistic animations enhance the visual appeal, making it feel like you are controlling a real car!',
-    'assets/images/car.png',
-    'https://github.com/Hamad-Anwar/Car-Controller-Getx-Flutter',
+    name: 'Dental',
+    description: 'Dental App provides services such as taking an appointment, viewing reports of the users such that it becomes easier for everyone',
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.webbook.dentalupload",
   ),
   Project(
-      'Neumorphic Clockify',
-      'Neumorphic TimeKit is an open-source project that brings together the elegance of a beautifully designed alarm system, an analog clock with a neumorphic touch, and a feature-rich stopwatch. Whether you\'re looking for a functional alarm tool, a stylish desktop clock, or a precise stopwatch, TimeKit has you covered.',
-      'assets/images/alarm.jpg',
-      'https://github.com/Hamad-Anwar/Neumorphic-Analog-Clockify'),
+    name: 'Webbook Support',
+    description: 'This app was created by me for Webbook to provide chat-support to their clients.',
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.webbook.webbooksupport",
+  ),Project(
+    name: 'Firebase Auth',
+    description: 'This app provides auth services using firebase and I made the project during my initial days of my career.',
+    link: "https://github.com/itsmesmith/firebase_auth"
+  ),Project(
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.webbook.webhrcore",
+    name: 'Webbook HR',
+    description: 'Webbook HR is an app that provides HR services to staff of Webbook. It helps to make staffs more productive.',
+  ),
   Project(
-      'CUI Aider',
-      'CUI AIDER is an extraordinary application that brings together augmented reality (AR), a robust student portal, intuitive class management, and a comprehensive GPA system, providing an all-encompassing solution for students.Using AR technology, CUI AIDER offers an immersive experience, allowing users to explore the complete university campus virtually. Through AR, students can visualize buildings, navigate with interactive directions, and gain a better understanding of their surroundings.',
-      'assets/images/cui.png',
-      'https://github.com/Hamad-Anwar/'),
-  Project(
-      'Flutter Music Streaming Application',
-      'A Flutter music streaming application that allows users to play audio files from local storage. The app features a beautiful neumorphic UI design and provides a smooth user experience for browsing and playing music.',
-      'assets/images/player.png',
-      'https://github.com/Hamad-Anwar/Neumorphic-Music_Player-Flutter'),
-  Project(
-      'Food Recipe App',
-      'This repository contains a Flutter implementation of a Food Recipe app with a captivating introduction section and impressive animations. It also features a signup and signin page with animations, elegantly presented on a bottom sheet.',
-      'assets/images/recipe.png',
-      'https://github.com/Hamad-Anwar/Food-Recipe-App-Flutter'),
-  Project(
-      'Task Sync Pro',
-      'Welcome to the Beautiful Task Scheduler App repository! This Flutter-based task management application combines elegant design with a robust backend, ensuring a seamless and organized task management experience. From stunning UI to real-time synchronization, this app has you covered.',
-      'assets/images/task.png',
-      'https://github.com/Hamad-Anwar/Task-Sync-Pro-Flutter'),
-  Project(
-      'Flutter Chat Application with Firebase',
-      'Welcome to our innovative Flutter chat application! This feature-rich messaging platform allows users to connect and communicate seamlessly through text and images. The app is built using Flutter for the frontend and integrates with Firebase for backend services, including authentication, real-time database, and storage.',
-      'assets/images/chat.png',
-      'https://github.com/Hamad-Anwar/Messenger-App-Backend-Firebase'),
-  Project(
-      'Doctor Appointment Application',
-      'Introducing the extraordinary "Doctor Appointment System" - a state-of-the-art Flutter UI application that redefines healthcare accessibility and efficiency. Seamlessly crafted, this app empowers users to effortlessly select doctors based on categories, engage in smooth messaging, and access detailed profiles.',
-      'assets/images/doctor.png',
-      'https://github.com/Hamad-Anwar/Doctor-Appointment-Application-UI'),
+      name: 'Corona Update',
+      description: 'Corona update is an app to view update of corona diseases in different graphs. This is the first app that i made',
+      link: "https://github.com/itsmesmith/coronaupdate"
+  )
 ];

@@ -6,7 +6,7 @@ class SocialMediaIconList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size=MediaQuery.sizeOf(context);
+    final size=MediaQuery.of(context).size;
     return TweenAnimationBuilder(tween: Tween(begin: 0.0,end: 1.0), duration: const Duration(milliseconds: 200), builder: (context, value, child) {
       return Transform.scale(scale: value,
       child:  Column(

@@ -11,16 +11,22 @@ class ProjectLinks extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Row(
-          children: [
-            const Text('Check on Github',style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis),
-            IconButton(onPressed: () {launchUrl(Uri.parse(projectList[index].link));}, icon: SvgPicture.asset('assets/icons/github.svg')),
-          ],
-        ),
+        // projectList[index].link!=null?GestureDetector(
+        //   onTap: (){
+        //     launchUrl(Uri.parse(projectList[index].link!));
+        //   },
+        //   child: Row(
+        //     children: [
+        //       const Text('Check on Github',style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis),
+        //        const SizedBox(width: 5,),
+        //        SvgPicture.asset('assets/icons/github.svg'),
+        //     ],
+        //   ),
+        // ):const SizedBox(),
         const Spacer(),
         TextButton(
             onPressed: () {
-              launchUrl(Uri.parse(projectList[index].link));
+              launchUrl(Uri.parse(projectList[index].link!));
             }, child: const Text('Read More>>',overflow: TextOverflow.ellipsis,style: TextStyle(color: Colors.amber,fontWeight: FontWeight.bold,fontSize: 10),))
       ],
     );
