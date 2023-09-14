@@ -5,7 +5,6 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../model/project_model.dart';
 import '../../../res/constants.dart';
 import '../../../view model/getx_controllers/projects_controller.dart';
-import 'image_viewer.dart';
 
 class ProjectStack extends StatelessWidget {
   final controller = Get.put(ProjectController());
